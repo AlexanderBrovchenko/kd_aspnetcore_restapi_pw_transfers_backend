@@ -21,9 +21,9 @@ namespace kd_pw_transfers_backend.Services
                 ))
                 .ForMember(x => x.Balance, opt =>
                     opt.MapFrom(src =>
-                    src.Payer.TransfersPayer.Where(y => y.Id <= src.Id).Sum(y => (-1) * y.Amount)
-                    + src.Payer.TransfersPayee.Where(y => y.Id <= src.Id).Sum(y => y.Amount)))
-            ;
+                    src.Payer.TransfersPayee.Where(y => y.Id <= src.Id).Sum(y => y.Amount)
+                    - src.Payer.TransfersPayer.Where(y => y.Id <= src.Id).Sum(y => y.Amount)
+                    ));
         }
     }
 }
