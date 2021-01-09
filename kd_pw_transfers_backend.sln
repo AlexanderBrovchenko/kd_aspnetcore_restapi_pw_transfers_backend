@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kd_pw_transfers_backend", "kd_pw_transfers_backend\kd_pw_transfers_backend.csproj", "{5AB6674E-B3EA-4F44-A2A4-1713E87A6B94}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5AB6674E-B3EA-4F44-A2A4-1713E87A6B94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AB6674E-B3EA-4F44-A2A4-1713E87A6B94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AB6674E-B3EA-4F44-A2A4-1713E87A6B94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AB6674E-B3EA-4F44-A2A4-1713E87A6B94}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5AAE9B1C-8796-428E-8B2A-CFB70B114762}
+	EndGlobalSection
+EndGlobal
