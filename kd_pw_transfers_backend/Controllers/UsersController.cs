@@ -122,12 +122,5 @@ namespace kd_pw_transfers_backend.Controllers
                 return BadRequest(new { message = ex.Message });
             }
         }
-
-        [HttpGet("users/{id}")]
-        public IActionResult GetById(int id)
-        {
-            User user = _userService.GetById(id);
-            return Ok(user);
-        }
     }
 }
