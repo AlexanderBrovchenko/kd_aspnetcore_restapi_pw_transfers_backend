@@ -76,6 +76,7 @@ namespace kd_pw_transfers_backend
 
             services.AddMvc();
             services.AddControllers();
+            services.AddCors();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -93,6 +94,10 @@ namespace kd_pw_transfers_backend
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseCors(builder => builder.WithOrigins("http://localhost:4200")
+                                            .WithHeaders("accept", "content-type", "origin", "authorization")
+                                            .AllowCredentials());
 
             app.UseEndpoints(endpoints =>
             {

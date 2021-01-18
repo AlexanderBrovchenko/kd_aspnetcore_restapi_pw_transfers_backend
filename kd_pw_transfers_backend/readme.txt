@@ -8,3 +8,5 @@ To get it working on your station:
 4. Install nuget packages from my list if your Visual Studio asks for that
 5. Compile and run the application.
 6. All API functions are desribed in .png files attached to the root folder of this git. You can try bad POSTs and GETs as well
+7. The project is backend part of 2-partial project giving RestAPI funcionality to https://github.com/AlexanderBrovchenko/kd_angular_pw_transfers_frontend. 
+	Edit "origin" parameter (Startup.cs, line 98) with proper url you have deployed the 2nd part on.
